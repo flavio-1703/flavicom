@@ -1,0 +1,26 @@
+:root {
+    --bg-color: #161b22;
+    --top-bg-color: #0d1117;
+    --apple-pink: rgb(255, 55, 95);
+}
+
+.sidebarChannel {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    height: 40px;
+    transition: all .3s ease;
+}
+
+.sidebarChannel:hover {
+    background-color: #0d1117;
+}
+
+.sidebarChannel > h4 {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.sidebarChannel__icon {
+    color: var(--apple-pink);
+}
