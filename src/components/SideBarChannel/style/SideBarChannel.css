@@ -2,14 +2,17 @@
     --bg-color: #161b22;
     --top-bg-color: #0d1117;
     --apple-pink: rgb(255, 55, 95);
+    --apple-yellow: rgb(255, 204, 0);
 }
 
 .sidebarChannel {
     display: flex;
     align-items: center;
     color: whitesmoke;
-    height: 40px;
+    height: 60px;
     transition: all .3s ease;
+    border-bottom: 1px solid black;
+    cursor: pointer;
 }
 
 .sidebarChannel:hover {
@@ -18,9 +21,9 @@
 
 .sidebarChannel > h4 {
     padding-left: 10px;
-    cursor: pointer;
 }
 
 .sidebarChannel__icon {
-    color: var(--apple-pink);
+    padding-left: 10px;
+    color: var(--apple-yellow);
 }

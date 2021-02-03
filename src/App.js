@@ -19,7 +19,8 @@ function App() {
   useEffect( () => {
     auth.onAuthStateChanged( (authUser) => {
       if(authUser) {
-        dispatch(login({
+        dispatch(
+          login({
           uid: authUser.uid,
           photo: authUser.photoURL,
           email: authUser.email,
@@ -36,16 +37,9 @@ function App() {
       {user ? (
       <>
       {/*Sidebar */}
-      <SideBar>
-        <SideBarChannel />
-        <SideBarChannel />
-        <SideBarChannel />
-        <SideBarChannel />
-      </SideBar>
+      <SideBar />
       {/*Chat */}
-      <Chat>
-        <ChatHeader />
-      </Chat>
+      <Chat />
       </>
       ) : (
         <Login />

@@ -1,3 +1,8 @@
+:root {
+    --apple-pink: rgb(255, 45, 85);
+    --apple-yellow: rgb(255, 204, 0);
+}
+
 .chatheader {
     display: flex;
     justify-content: space-between;
@@ -13,7 +18,7 @@
 
 .chatheader__left > h3 {
     padding-left: 10px;
-    color: whitesmoke;
+    color: var(--apple-pink);
 }
 
 .chatheader__right {

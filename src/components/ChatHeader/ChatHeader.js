@@ -8,14 +8,15 @@ import PeopleIcon from '@material-ui/icons/People';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import SearchIcon from '@material-ui/icons/Search';
 import HelpIcon from '@material-ui/icons/Help';
+//utils
 
-const ChatHeader = () => {
+const ChatHeader = ({channelName}) => {
 
     return (
         <div className="chatheader">
             <div className="chatheader__left">
                 <BubbleChartIcon />
-                <h3>Channel</h3>
+                <h3>{channelName}</h3>
             </div>
             <div className="chatheader__right">
                 <NotificationsIcon className="chatheader__right__icon" />

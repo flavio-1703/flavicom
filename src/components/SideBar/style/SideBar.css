@@ -71,3 +71,12 @@
     flex: 1;
     padding: 10px;
 }
+
+.sidebar__channelsList {
+    height: 79vh;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
